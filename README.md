@@ -1,2 +1,2 @@
 # nginx-postgress-docker
-docker nginx &amp; postgress en Raspberry po
+docker nginx &amp; postgress en Raspberry pi
