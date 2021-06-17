@@ -19,6 +19,22 @@ services:
 
     networks:
      - "postgres"
+     
+#nginx server
+  www:
+    image: nginx:1.17-alpine
+    restart: always
+    ports:
+      - "8081:80"
+      #- "443:443"
+    volumes:
+      - /home/haroldo/git/nginx-postgress-docker/www: /usr/share:ro
+
+networks:
+
+  postgres:
+    driver: "bridge"
+
 
 networks:
 
